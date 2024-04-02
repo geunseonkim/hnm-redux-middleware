@@ -1,0 +1,110 @@
+.body-font {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.login-button {
+    display: flex;
+    justify-content: flex-end;
+    /* margin: 20px; */
+    cursor: pointer;
+}
+.login-button div {
+    margin: -4px 7px;
+}
+.nav-section {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    margin: 20px;
+}
+.menu-list {
+    display: flex;
+    list-style-type: none;
+    cursor: pointer;
+}
+.menu-list li {
+    padding: 10px;
+}
+.menu-list li:hover {
+    color: rgb(131, 131, 131);
+}
+.menu-area {
+    display: flex;
+    justify-content: center;
+}
+.search-area {
+    position: absolute;
+    right: 0px;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+}
+.search-area input {
+    border: none;
+}
+.product-card {
+    margin: 20px;
+    transition: all 0.2s linear;
+}
+.product-card:hover {
+    transform: scale(1.1);
+}
+.product-img {
+    display: flex;
+    justify-content: flex-end;
+}
+.NavLogo {
+    visibility: hidden;
+}
+
+@media screen and (max-width: 63rem) {
+    .menu-area {
+        display: none;
+    }
+    .NavLogo {
+        visibility: visible;
+        cursor: pointer;
+    }
+}
+.nav-area {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.side-menu {
+    background-color: rgb(242, 242, 242);
+    height: 100vh;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+    overflow-x: hidden;
+}
+.side-menu-list button {
+    border: none;
+    background-color: rgb(242, 242, 242);
+    width: 130px;
+    margin: 15px 50px;
+}
+.side-menu-list {
+    margin-top: 50px;
+    font-size: 20px;
+  }
+.closebtn {
+    border: none;
+    background-color: rgb(242, 242, 242);
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    font-size: 38px;
+}
+.side-menu-list button:hover {
+    color: rgb(131, 131, 131);
+}
+.closebtn:hover {
+    color: rgb(131, 131, 131);
+}
+
+.productCard {
+    text-align: center;
+}
