@@ -6,6 +6,7 @@ import DropdownButton from 'react-bootstrap/DropdownButton';
 import Button from 'react-bootstrap/Button';
 import { productAction } from '../redux/actions/productAction';
 import { useDispatch, useSelector } from 'react-redux';
+import { fetchDetailProducts } from '../redux/reducers/productSlice';
 
 const ProductDetail = () => {
   let{id} = useParams();
@@ -13,7 +14,9 @@ const ProductDetail = () => {
   // const [product, setProduct] = useState(null) // 3. api data를 state에 저장!
   const dispatch = useDispatch();
   const getProductDetail = () => {
-    dispatch(productAction.getProductDetail(id))
+    // dispatch(productAction.getProductDetail(id))
+    dispatch(fetchDetailProducts(id))
+    console.log("iddd", product);
   }
   useEffect(()=>{
     getProductDetail()
